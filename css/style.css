@@ -3,19 +3,23 @@
  padding: 0;
 }
 
-html, body {
+html {
   height: 100%;
 }
 
-/* Background image */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* header background-image */
+header {
   background-image: url(../assets/images/bnsd-background.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 1250px;
 }
-
-/* Logo */
-
 
 
 /* navbar */
@@ -25,7 +29,10 @@ body {
   display:flex;
   justify-content: space-between;
   min-height: 100%;
+  position: sticky;
+  top: 0;
 }
+
 .navbar-links {
   font-family: 'Bangers';
   height: 100%;
@@ -143,20 +150,81 @@ li {
   }
 }
 
-.footer {
-  background-color: #191919;
-  position: relative;
-  height: 300 px;
+/* Slogan */
+
+section {
+
 }
 
-
-
-.footer-info, .fa-brands-footer {
-  color: #e7e7e7;
+.slogan {
   text-align: center;
-  font-family: monospace;
+  font-family: 'Bangers';
+  margin: 1rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-i.fa-brands.fa-square-instagram::before, i.fa-brands.fa-yelp::before  {
-  color:white;
+.slogan h1 {
+  font-size: 38px;
+}
+
+.slogan p {
+  font-size: 20px;
+}
+
+/* Gallery */
+
+.image-grid {
+  --gap: 16px;
+  --num-cols: 2;
+  --row-height: 550px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.image-grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-grid-col-2 {
+  grid-column: span 2;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+/* Anything under 1024px */
+@media screen and (max-width: 1024px) {
+  .image-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+}
+
+
+
+
+/* footer */
+
+.footer-container {
+  background-color: black;
+  padding-left: 5%;
+  box-sizing:border-box;
+  color: #e7e7e7;
+  font-family: 'Nunito Sans', sans-serif;
+  bottom: 0;
+  width: 100%;
+}
+
+.location h1, .hours h2 {
+  font-size: 20px;
 }
