@@ -5,13 +5,13 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 
-// function toggle() {
-//   var blur = document.getElementsByClassName('image-grid');
+document.querySelectorAll('.image-grid img').forEach(image => {
+  image.onclick = () => {
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+  }
+});
 
-//   for (var i = 0; i < image-grid.length; i++) {
-//     image-grid[i].classList.toggle('active');
-//   }
-
-//   var popup = document.getElementById('burger');
-//   popup.classList.toggle('active')
-// }
+document.querySelector('.popup-image span').onclick = () => {
+  document.querySelector('.popup-image').style.display = 'none';
+}
