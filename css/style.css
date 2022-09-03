@@ -111,8 +111,7 @@ li {
   border-radius: 10px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   .toggle-button {
     display: flex;
   }
@@ -146,6 +145,10 @@ li {
 
   .navbar-links.active {
     display: flex;
+  }
+
+  .logo {
+    width: auto;
   }
 }
 
@@ -290,4 +293,46 @@ main {
 
 .contact {
   line-height: 27px;
+}
+
+/* Menu page */
+
+.menu-container {
+  display: flex;
+}
+
+#menu-image {
+  height: 1000px;
+  width: 50%;
+  margin: 1rem;
+}
+
+.menu-text {
+  font-family: 'Bangers', cursive;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.menu-text h1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.menu-text p {
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .menu-container {
+    display: grid;
+    width: auto;
+  }
+
+  #menu-image {
+    width: 100%;
+  }
+
+  .menu-text {
+    width: 100%;
+  }
 }
