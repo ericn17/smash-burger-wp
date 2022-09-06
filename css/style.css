@@ -13,6 +13,8 @@ body {
   min-height: 100%;
 }
 
+/* ----------------- Home Page ------------------------ */
+
 /* header background-image */
 .background-image {
   background-image: url(../assets/images/bnsd-background.png);
@@ -66,7 +68,6 @@ a.home-link:hover {
 
 .navbar-links li {
   list-style: none;
-  
 }
 
 .navbar-links li a {
@@ -78,6 +79,11 @@ a.home-link:hover {
 
 .navbar-links li:hover {
   text-shadow: 0 0 5px blanchedalmond;
+  text-decoration: underline
+}
+
+.nav-link:active {
+  text-decoration: underline;
 }
 
 
@@ -297,7 +303,7 @@ main {
   line-height: 27px;
 }
 
-/* Menu page */
+/* ----------------- Menu Page ------------------------ */
 
 .menu-container {
   display: flex;
@@ -338,4 +344,30 @@ main {
   .menu-text {
     width: 100%;
   }
+}
+
+/*----------------- Our Story Page ------------------------*/
+
+.background-image h1 {
+  font-size: 65px;
+  text-align: center;
+  margin-top: 500px;
+  font-family: 'Bangers';
+}
+
+.our-story  {
+ margin: 25rem;
+}
+
+.our-story h1, p {
+  font-family: 'bangers';
+  word-spacing: 5px;
+}
+
+.our-story h1 {
+  font-size: 36px;
+}
+
+.our-story p {
+ font-size: 26px;
 }
