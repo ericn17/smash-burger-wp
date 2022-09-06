@@ -145,6 +145,8 @@ li {
 
   .navbar-links.active {
     display: flex;
+    background-color: #FAF9F6;
+    margin-top: 0%;
   }
 
   .logo {
@@ -302,9 +304,10 @@ main {
 }
 
 #menu-image {
-  height: 1000px;
-  width: 50%;
+  height: 800px;
+  width: 33.33%;
   margin: 1rem;
+  justify-content: space-evenly;
 }
 
 .menu-text {
