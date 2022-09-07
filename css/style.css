@@ -180,7 +180,7 @@ li {
 }
 
 main {
-  background-color: #FAF9F6;
+  background-color: white;
 }
 
 /* Gallery */
@@ -318,8 +318,7 @@ main {
 
 .menu-text {
   font-family: 'Bangers', cursive;
-  margin-top: 50px;
-  margin-bottom: 35px;
+  margin: 5rem;
 }
 
 .menu-text h1 {
@@ -356,7 +355,7 @@ main {
 }
 
 .our-story  {
- margin: 25rem;
+ margin: 20rem;
 }
 
 .our-story h1, p {
@@ -370,4 +369,69 @@ main {
 
 .our-story p {
  font-size: 26px;
+}
+
+/* --------------------- Location Page ------------------- */
+
+.map-container {
+  margin: 5rem;
+  border: 5px;
+  border-color: gray;
+}
+
+.map-container h1 {
+  font-family: 'bangers';
+  text-align: center;
+  margin: 3rem;
+  font-size: 32px;
+}
+
+#location {
+  width: 45%;
+  margin: 1rem;
+}
+
+.location-info {
+  display: flex;
+}
+
+.info-info {
+  width: 50%;
+  margin: 1rem;
+  background-color: #FAF9F6;
+  text-align: center;
+  padding: 200px;
+  line-height: 70px;
+}
+
+.info-info h2 {
+  font-size: 36px;
+  font-family: 'nunito sans';
+}
+
+.info-info p {
+  font-size: 24px;
+  font-family: 'nunito sans';
+}
+
+.email-us {
+  text-align: center;
+  margin: 5rem;
+  font-family: 'nunito sans';
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .location-info {
+    display: grid;
+    width: auto;
+  }
+
+  #location {
+    width: 100%;
+  }
+
+  .info-info {
+    width: 100%;
+  }
 }
