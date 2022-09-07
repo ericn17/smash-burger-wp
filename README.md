@@ -15,7 +15,7 @@ This is a brochure website for a smash burger place. A small project to practice
   ## [Installation](#table-of-contents)
   You can access the webpage through the deployed link below:
   
-  https://github.com/ericn17/ubiquitous-train
+  https://ericn17.github.io/smash-burger-wp/index.html
   
   
   ## [License](#table-of-contents)
