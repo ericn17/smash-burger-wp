@@ -122,6 +122,12 @@ li {
     display: flex;
   }
 
+@media only screen and (max-width: 357px) {
+  .navbar {
+    height: 164px;
+  }
+}
+
   .navbar-links {
     display: none;
     width: 100%;
@@ -338,10 +344,13 @@ main {
 
   #menu-image {
     width: 100%;
+    height: auto;
   }
 
   .menu-text {
-    width: 100%;
+    width: auto;
+    margin: 0;
+    padding: 2rem;
   }
 }
 
@@ -369,6 +378,21 @@ main {
 
 .our-story p {
  font-size: 26px;
+}
+
+@media only screen and (max-width: 880px) {
+  .our-story {
+    margin: 0;
+    padding: 2rem;
+  }
+
+  /* .our-story h1 {
+    font-size: 24px;
+  }
+
+  .our-story p {
+    font-size: 12px;
+  } */
 }
 
 /* --------------------- Location Page ------------------- */
@@ -429,9 +453,48 @@ main {
 
   #location {
     width: 100%;
+    height: auto;
   }
 
   .info-info {
-    width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .email-us h1 {
+    width: auto;
+    margin: 0;
+    padding: 2rem;
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  #location {
+    width: 300px;
+  }
+
+  .info-info {
+    margin: 0;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .info-info {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .email-us h1 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .email-us h1 {
+    font-size: 20px;
+    text-align: left;
   }
 }
