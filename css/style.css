@@ -20,7 +20,7 @@ body {
   background-image: url(../assets/images/bnsd-background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1250px;
+  height: 1000px;
 }
 
 /* Logo */
@@ -170,7 +170,7 @@ li {
 
 .slogan {
   text-align: center;
-  font-family: 'Bangers';
+  font-family: 'nunito sans';
   margin: 1rem;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -183,6 +183,7 @@ li {
 
 .slogan p {
   font-size: 25px;
+  font-family: 'nunito sans';
 }
 
 main {
@@ -311,6 +312,13 @@ main {
 
 /* ----------------- Menu Page ------------------------ */
 
+.menu-header h1 {
+  font-family: 'nunito sans';
+  text-align: center;
+  margin: 3rem;
+  font-size: 48px;
+}
+
 .menu-container {
   display: flex;
 }
@@ -323,7 +331,7 @@ main {
 }
 
 .menu-text {
-  font-family: 'Bangers', cursive;
+  font-family: 'nunito sans';
   margin: 5rem;
 }
 
@@ -360,7 +368,7 @@ main {
   font-size: 65px;
   text-align: center;
   margin-top: 500px;
-  font-family: 'Bangers';
+  font-family: 'nunito sans';
 }
 
 .our-story  {
@@ -368,7 +376,7 @@ main {
 }
 
 .our-story h1, p {
-  font-family: 'bangers';
+  font-family: 'nunito sans';
   word-spacing: 5px;
 }
 
@@ -404,10 +412,10 @@ main {
 }
 
 .map-container h1 {
-  font-family: 'bangers';
+  font-family: 'nunito sans';
   text-align: center;
   margin: 3rem;
-  font-size: 32px;
+  font-size: 48px;
 }
 
 #location {
@@ -424,8 +432,10 @@ main {
   margin: 1rem;
   background-color: #FAF9F6;
   text-align: center;
-  padding: 200px;
-  line-height: 70px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-info h2 {
@@ -438,11 +448,12 @@ main {
   font-family: 'nunito sans';
 }
 
+
 .email-us {
   text-align: center;
   margin: 5rem;
   font-family: 'nunito sans';
-  font-size: 32px;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -465,7 +476,7 @@ main {
     width: auto;
     margin: 0;
     padding: 2rem;
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
