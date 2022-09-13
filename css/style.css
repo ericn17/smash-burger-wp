@@ -20,7 +20,7 @@ body {
   background-image: url(../assets/images/bnsd-background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1000px;
+  min-height: 1200px;
 }
 
 /* Logo */
@@ -419,7 +419,7 @@ main {
 }
 
 #location {
-  width: 45%;
+  width: 50%;
   margin: 1rem;
 }
 
@@ -446,14 +446,6 @@ main {
 .info-info p {
   font-size: 24px;
   font-family: 'nunito sans';
-}
-
-
-.email-us {
-  text-align: center;
-  margin: 5rem;
-  font-family: 'nunito sans';
-  font-size: 24px;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -508,4 +500,66 @@ main {
     font-size: 20px;
     text-align: left;
   }
+}
+
+/* ----------------- Contact Page -------------------------- */
+
+form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 10px;
+  
+}
+
+form h4 {
+  font-size: 65px;
+  font-family: 'nunito sans';
+  padding: .5em;
+}
+
+form h5 {
+  font-size: 25px;
+  font-family: 'nunito sans';
+  padding: .5em;
+}
+
+form input, form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background:#FAF9F6;
+  font-family: 'nunito sans';
+  font-size: 20px;
+}
+
+form button {
+  margin-top: .75em;
+  padding: 15px;
+  background: black ;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  width: 200px;
+  transition: .2s ease-in-out;
+}
+
+form button:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  background: #F9F0D6;
+  color: black;
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
